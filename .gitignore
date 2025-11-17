@@ -2,7 +2,6 @@
 .idea
 data
 exports
-gcl_classifier/weights
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
