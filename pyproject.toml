@@ -3,21 +3,28 @@ requires = ["setuptools>=77.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "rgc-classifier"
+name = "gcl-classifier"
 version = "0.1.0"
 readme = "README.md"
-description = "Retinal Ganglion Cell Classifier"
-requires-python = ">=3.13"
+    description = "Ganglion cell layer (GCL) response classifier"
+requires-python = ">=3.10"
 dependencies = [
     "datajoint>=0.14.6",
+    "huggingface-hub>=1.1.4",
+    "ipywidgets>=8.1.8",
     "matplotlib>=3.10.7",
     "notebook>=7.4.7",
     "numpy>=2.3.4",
     "pandas>=2.3.3",
+    "pytest>=9.0.1",
     "scikit-learn>=1.7.2",
     "seaborn>=0.13.2",
+    "skops>=0.13.0",
     "tqdm>=4.67.1",
 ]
 
 [tool.setuptools.packages]
 find = {exclude = ["notebooks"]}
+
+[tool.setuptools.package-data]
+your_package = ["weights/*.joblib"]

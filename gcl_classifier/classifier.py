@@ -2,7 +2,7 @@ import pickle
 
 import numpy as np
 
-from rgc_classifier.baden16 import baden_cluster_id_to_group_id, baden_group_id_to_supergroup, BADEN_CLUSTER_INFO
+from gcl_classifier.baden16 import baden_cluster_id_to_group_id, baden_group_id_to_supergroup, BADEN_CLUSTER_INFO
 
 
 def classify_cells(preproc_chirps, preproc_bars, bar_ds_pvalues, roi_size_um2s,
@@ -75,8 +75,8 @@ def check_classifier_dict(clf_dict):
     return clf_dict
 
 
-def save_classifier_to_file(classifier, chirp_feats, bar_feats, feature_names, train_x, train_y, y_names,
-                            classifier_file, **kwargs):
+def save_classifier_and_data(classifier, chirp_feats, bar_feats, feature_names, train_x, train_y, y_names,
+                             classifier_file, **kwargs):
     """
     Saves the classifier and its metadata to a file.
     """
