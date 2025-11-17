@@ -1,1 +1,1 @@
-from model import get_model, predict, predict_proba
+from .model import get_model, predict, predict_proba
