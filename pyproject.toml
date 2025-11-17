@@ -9,18 +9,13 @@ readme = "README.md"
     description = "Ganglion cell layer (GCL) response classifier"
 requires-python = ">=3.10"
 dependencies = [
-    "datajoint>=0.14.6",
-    "huggingface-hub>=1.1.4",
-    "ipywidgets>=8.1.8",
-    "matplotlib>=3.10.7",
-    "notebook>=7.4.7",
-    "numpy>=2.3.4",
-    "pandas>=2.3.3",
-    "pytest>=9.0.1",
-    "scikit-learn>=1.7.2",
-    "seaborn>=0.13.2",
-    "skops>=0.13.0",
-    "tqdm>=4.67.1",
+    "huggingface-hub>=1.0.0",
+    "numpy>=2.0.0",
+    "pandas>=2.0.0",
+    "scikit-learn>=1.5.0",
+    "skops>=0.12.0",
+    "pytest",
+    "tqdm",
 ]
 
 [tool.setuptools.packages]
