@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=77.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gcl-classifier"
+version = "0.1.0"
+readme = "README.md"
+    description = "Ganglion cell layer (GCL) response classifier"
+requires-python = ">=3.10"
+dependencies = [
+    "huggingface-hub>=1.0.0",
+    "numpy>=2.0.0",
+    "scikit-learn>=1.5.0",
+    "skops>=0.12.0",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+notebook = [
+    "notebook>=7.4.7",
+    "pandas>=2.0.0",
+    "ipywidgets",
+    "pyarrow",
+    "seaborn",
+    "matplotlib",
+]
+
+[tool.setuptools.packages]
+find = {exclude = ["notebooks", "tests"]}
+
+[tool.setuptools.package-data]
+your_package = ["weights/*.joblib"]
