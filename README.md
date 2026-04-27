@@ -2,9 +2,11 @@
 
 A ganglion cell layer (GCL) classifier trained on functional two-photon calcium imaging recordings of mouse retinas in response to chirp and moving bar stimuli.
 The labels and classification are based on Baden, Franke, Berens et al. (2016) "The functional diversity of retinal ganglion cells in the mouse." Nature 529.7586 (2016): 345-350. 
-The classifier was already used in two publictions: 
-1. Qiu, et al. "Efficient coding of natural scenes improves neural system identification." PLoS computational biology 19.4 (2023): e1011037.
-2. Gonschorek, et al. "Nitric oxide modulates contrast suppression in a subset of mouse retinal ganglion cells." Elife 13 (2025): RP98742.
+The classifier was already used in four publictions: 
+1. Qiu, Y. et al. "Efficient coding of natural scenes improves neural system identification." PLoS computational biology 19.4 (2023): e1011037.
+2. Gonschorek, D. et al. "Nitric oxide modulates contrast suppression in a subset of mouse retinal ganglion cells." Elife 13 (2025): RP98742.
+3. Dyszkant, N. et al. "Photoreceptor degeneration has heterogeneous effects on functional retinal ganglion cell types." The Journal of Physiology (2025):, 603(21), 6599-6621.
+4. Gonschorek, D. et al. "A large-scale dataset of functional mouse ganglion cell layer responses." bioRxiv (2025): 2025-12.
 
 
 # Installation
